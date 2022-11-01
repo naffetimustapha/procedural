@@ -1,0 +1,18 @@
+ALGORITHM algorithm_name
+VAR
+   ar1: INTEGER [2];
+ar2: INTEGER[2];
+el :=0: INTEGER;
+i: INTEGER;
+j: INTEGER; set_declarations
+BEGIN
+  read (ar1);
+read(ar2);
+
+for i from 0 to ar1.length-1 step 1 do 
+for j from 0 to ar2.length-1 step 1 do  
+el:= el + ar1[i]*ar2[j]  set_instructions
+if el:=0 then
+write "two vectors of given IR are orthogonal"
+else "two vectors of given IR are not orthogonal"
+END
